@@ -19,7 +19,7 @@ Usage: SortYumPackageSize datafile [datafile...]
 
 By Wei Shen < shenwei356@gmail.com http://shenwei.me >
 
-Update: 2014-3-11
+Update: 2014-3-13
 
 Contents in data file are copied when running yum update:
 
@@ -28,7 +28,7 @@ Contents in data file are copied when running yum update:
     ark-libs      x86_64   4.12.3-1.fc20     updates       138 k
 
 `
-var BytesizeRegexp = regexp.MustCompile(`(?i)(\-?[\d\.]+\s*(?:[KMGTPEZY]?B|[BKMGTPEZY]))`)
+var BytesizeRegexp = regexp.MustCompile(`(?i)([\d\.]+\s*(?:[KMGTPEZY]?B|[BKMGTPEZY]))\s*$`)
 
 func main() {
 	if len(os.Args) == 1 {
