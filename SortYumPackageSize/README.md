@@ -2,7 +2,7 @@ Usage: SortYumPackageSize datafile [datafile...]
 
 By Wei Shen < shenwei356#gmail.com http://shenwei.me >
 
-Update: 2014-3-11
+Update: 2014-3-13
 
 Contents in data file are copied when running yum update:
 
